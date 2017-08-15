@@ -1,16 +1,11 @@
 {
   "name": "hdi-testing-activo",
-<<<<<<< HEAD
   "version": "1.0.0",
   "description": "",
-=======
-  "version": "0.0.0",
->>>>>>> d0e8c5cff7cdf82b28f8c3725d63298adf20a4b9
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
   },
-<<<<<<< HEAD
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ur13l/hdi-testing-activo.git"
@@ -21,21 +16,13 @@
     "url": "https://github.com/ur13l/hdi-testing-activo/issues"
   },
   "homepage": "https://github.com/ur13l/hdi-testing-activo#readme",
-=======
->>>>>>> d0e8c5cff7cdf82b28f8c3725d63298adf20a4b9
   "dependencies": {
     "body-parser": "~1.17.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
     "express": "~4.15.2",
-<<<<<<< HEAD
     "jade": "~1.11.0",
     "morgan": "~1.8.1",
-    "mysql": "^2.14.1",
-=======
-    "morgan": "~1.8.1",
-    "pug": "~2.0.0-beta11",
->>>>>>> d0e8c5cff7cdf82b28f8c3725d63298adf20a4b9
     "serve-favicon": "~2.4.2"
   }
 }
