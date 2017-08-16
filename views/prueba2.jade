@@ -1,0 +1,32 @@
+extends layout
+
+block content
+
+    h1 Aqui se muestran los datos de las pruebas disponibles
+
+    table(class='tabla' id='tabla_res')
+      thead
+        tr
+          th='ID'
+          th='Nombre'
+          th='Descripción'
+          th='Fecha_ejecucion'
+          th='Estatus'
+          th='Path'
+          th='Class'
+          th='Created_at'
+          th='Updated_at'
+          th='Deleted_at'
+      tbody
+        each result in tst
+          tr
+            td=result.id
+            td=result.nombre
+            td=result.descripcion
+            td=result.fecha_ejecucion
+            td=result.estatus
+            td=result.path
+            td=result.class
+            td=result.created_at
+            td=result.updated_at
+            td=result.deleted_at

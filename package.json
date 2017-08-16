@@ -1,13 +1,11 @@
 {
   "name": "hdi-testing-activo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node index";
+    "start": "node ./bin/www"
   },
-  "repository": {
+    "repository": {
     "type": "git",
     "url": "git+https://github.com/ur13l/hdi-testing-activo.git"
   },
@@ -18,6 +16,14 @@
   },
   "homepage": "https://github.com/ur13l/hdi-testing-activo#readme",
   "dependencies": {
-    "express": "^4.15.4"
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "jade": "~1.11.0",
+    "morgan": "~1.8.1",
+    "mysql": "^2.14.1",
+    "nodemon": "^1.11.0",
+    "serve-favicon": "~2.4.2"
   }
 }
