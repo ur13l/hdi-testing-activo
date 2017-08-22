@@ -2,31 +2,33 @@ extends layout
 
 block content
 
-    h1 Aqui se muestran los datos de las pruebas disponibles
+  div(class=['ui container grid stackable'])
 
-    table(class='tabla' id='tabla_res')
-      thead
-        tr
-          th='ID'
-          th='Nombre'
-          th='Descripción'
-          th='Fecha_ejecucion'
-          th='Estatus'
-          th='Path'
-          th='Class'
-          th='Created_at'
-          th='Updated_at'
-          th='Deleted_at'
-      tbody
-        each result in tst
+    div(class=['sixteen wide column'])
+      h2(class=['ui header dividing']) Pruebas disponibles
+    table(class=['ui table inverted celled padded'] id='tabla_res')
+        thead
           tr
-            td=result.id
-            td=result.nombre
-            td=result.descripcion
-            td=result.fecha_ejecucion
-            td=result.estatus
-            td=result.path
-            td=result.class
-            td=result.created_at
-            td=result.updated_at
-            td=result.deleted_at
+            th='ID'
+            th='Nombre'
+            th='Descripción'
+            th='Fecha_ejecucion'
+            th='Estatus'
+            th='Class'
+            th='Ejecutar'
+        tbody
+          each result in tst
+            tr
+              td(id='idTest')=result.id
+              td=result.nombre
+              td=result.descripcion
+              td=result.fecha_ejecucion
+              td=result.estatus
+              td=result.class
+              td
+                a(class=['ui button basic icon inverted'] href='#' data-tooltip='Ejecutar'
+                data-position='top center',id='ejecutartest')
+                  i(class=['share icon'])
+    div(class=['seven wide column'])
+        button(class=['button basic ui black'] href='#')= 'Historial de Ejecuciones'
+  script(src='/javascripts/ejecutartest.js')
