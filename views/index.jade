@@ -1,6 +1,21 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  div(class="inic" id="pat1") #{tst}
+
+  div(class=['ui container grid stackable'])
+    div(class=['ten', 'wide', 'column'])
+      h1(class=['ui header dividing'])=title
+    div(class=['ui container grid stackable'])
+        div(class=['grouped fields'] id='selecTest')
+          h5(class=['ui header dividing green'])='Test disponibles'
+          div(class=['field'])
+            div(class=['ui radio checkbox'] id='hdi')
+              input(name='selector-prueba' type='radio')
+              label='HDI'
+            div(class='field')
+              div(class='ui radio checkbox' id='guanajoven')
+                input(name='selector-prueba' type='radio')
+                label='Guanajoven'
+    div(class=['ten wide column'])
+       button(class=['ui button basic green'] href='' id='btnSTest' onClick="window.location='http://localhost:3000/prueba'" value="vinculo") Seleccionar test
+    script(src='/javascripts/deTest.js')

@@ -1,3 +1,8 @@
+/*
+  Esta clase se usa para inicializar los archivos de controllers, a excepcion
+  del archivo index.js
+*/
+
 var fs = require('fs');
 var path = require('path');
 
