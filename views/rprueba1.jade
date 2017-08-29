@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  include nav
+
+  div(class=['ui container grid stackable'])
+
+    div(class=['sixteen wide column'])
+      h2(class=['ui header dividing']) Resultados de Prueba 1
+    table(class=['ui table celled inverted padded'] id='tabla_res')
+      thead
+        tr
+          th='ID Caso de prueba'
+          th='Asert'
+          th='Esperado'
+          th='Recibido'
+          th='Estado'
+          th='Tiempo de Ejecución'
+          th='Fecha'
+      tbody
+        each pr in resultados
+          tr
+            td=pr.id_caso_prueba
+            td=pr.nombre
+            td=pr.esperado
+            td=pr.recibido
+            td=pr.estatus
+            td=pr.tiempo
+            td=pr.created_at
