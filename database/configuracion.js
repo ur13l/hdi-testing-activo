@@ -1,6 +1,6 @@
 var config =
 {
-  host:'localhost',
+  host:'10.0.7.40',
   port:'3306',
   user:'root',
   password:'info2000',
